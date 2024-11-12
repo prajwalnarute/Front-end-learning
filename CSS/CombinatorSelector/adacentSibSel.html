@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector Example</title>
+   <style>
+    /* Adjacent sibling selector: targets the <p> that immediately follows an <h2> */
+    h2 + p {
+    color: red;
+    font-weight: bold;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h2>First Heading</h2>
+        <p>Paragraph immediately after the first heading.</p>
+        <p>Another paragraph.</p>
+        <h2>Second Heading</h2>
+        <p>Paragraph immediately after the second heading.</p>
+        <p>Yet another paragraph.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div>h1{
+            background-color: yellow;
+            color: blue;
+        }
+        #parent1>#head1{
+            background-color: blue;
+            color:red ;
+        }
+        .parent1>.head1{
+            background-color: aqua;
+            color: white;
+        }
+        .parent1>#head1{
+            background-color: tomato;
+            color: springgreen;
+        }
+        #parent2>#head2{
+            background-color: brown;
+            color: turquoise;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="parent1" id="parent1">This is first parent1
+        <h1 class="head1" id="head1"> child of first parent1</h1>
+
+    </div>
+
+    <div class="parent2" id="parent2">
+        <h1 class="head2" id="head2"> child of second div</h1>
+    </div>
+    
+</body>
+</html>

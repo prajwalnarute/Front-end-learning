@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. single element with same class name and diff id name -->
+     <!-- Syntax: elementName.className#idName -->
+      <h1 class="head" id="head1"></h1>
+
+
+
+      <!-- Multiple elements with same name and same class name and same id name -->
+       <!-- syntax: elementName.className#idName*count -->
+        <!-- h1.head.#head*5 -->
+
+        <h1 class="head" id="head"></h1>
+        <h1 class="head" id="head"></h1>
+        <h1 class="head" id="head"></h1>
+        <h1 class="head" id="head"></h1>
+        <h1 class="head" id="head"></h1>
+
+
+
+      <!-- Multiple elements with same name and same class name and diff id name -->
+       <!-- elementName.className#idName$*count-->
+        <!-- h1.head#head$*5 -->
+       <h1 class="head" id="head1"></h1>
+       <h1 class="head" id="head2"></h1>
+       <h1 class="head" id="head3"></h1>
+       <h1 class="head" id="head4"></h1>
+       <h1 class="head" id="head5"></h1>
+
+
+       <!-- Parent > child -->
+        <!-- Syntax: parentElement>childElement -->
+         <!-- div.container>.row>.col -->
+          
+
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <!-- Parent Element alongwith same class and same id and having child element with same class and id name -->
+         <!-- Syntax: parentElement.className#idName>childElement.className#idName -->
+          <!--  div.container#container1>.row#row1>.col#col1 -->
+          <div class="container" id="container1">
+            <div class="row" id="row1">
+                <div class="col" id="col1"></div>
+            </div>
+          </div>
+
+
+          <!-- table creation -->
+           <!-- syntax: table>tr>td -->
+         <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+         </table>
+
+         <table>
+
+
+            <tr>
+                <td id="para1"></td>
+                <td id="para2"></td>
+                <td id="para3"></td>
+            </tr>
+         </table>
+
+         div.head#head
+      
+ <!-- create 5 element same class name and different id name and each parent should have different id name  -->
+ <div class="head" id="head1">
+    <div class="container" id="container1"></div>
+ </div>
+ <div class="head" id="head2">
+    <div class="container" id="container2"></div>
+ </div>
+ <div class="head" id="head3">
+    <div class="container" id="container3"></div>
+ </div>
+ <div class="head" id="head4">
+    <div class="container" id="container4"></div>
+ </div>
+ <div class="head" id="head5">
+    <div class="container" id="container5"></div>
+ </div>
+ <div class="head" id="head6">
+    <div class="container" id="container6"></div>
+ </div>
+ <div class="head" id="head7">
+    <div class="container" id="container7"></div>
+ </div>
+ <div class="head" id="head8">
+    <div class="container" id="container8"></div>
+ </div>
+ <div class="head" id="head9">
+    <div class="container" id="container9"></div>
+ </div>
+ <div class="head" id="head10">
+    <div class="container" id="container10"></div>
+ </div>
+ <div class="head" id="head11">
+    <div class="container" id="container11"></div>
+ </div>
+ <div class="head" id="head12">
+    <div class="container" id="container12"></div>
+ </div>
+ <div class="head" id="head13">
+    <div class="container" id="container13"></div>
+ </div>
+ <div class="head" id="head14">
+    <div class="container" id="container14"></div>
+ </div>
+ <div class="head" id="head15">
+    <div class="container" id="container15"></div>
+ </div>
+ <div class="head" id="head16">
+    <div class="container" id="container16"></div>
+ </div>
+ <div class="head" id="head17">
+    <div class="container" id="container17"></div>
+ </div>
+ <div class="head" id="head18">
+    <div class="container" id="container18"></div>
+ </div>
+ <div class="head" id="head19">
+    <div class="container" id="container19"></div>
+ </div>
+ <div class="head" id="head20">
+    <div class="container" id="container20"></div>
+ </div>
+ <div class="head" id="head21">
+    <div class="container" id="container21"></div>
+ </div>
+ <div class="head" id="head22">
+    <div class="container" id="container22"></div>
+ </div>
+ <div class="head" id="head23">
+    <div class="container" id="container23"></div>
+ </div>
+ <div class="head" id="head24">
+    <div class="container" id="container24"></div>
+ </div>
+ <div class="head" id="head25">
+    <div class="container" id="container25"></div>
+ </div>
+ <div class="head" id="head26">
+    <div class="container" id="container26"></div>
+ </div>
+ <div class="head" id="head27">
+    <div class="container" id="container27"></div>
+ </div>
+ <div class="head" id="head28">
+    <div class="container" id="container28"></div>
+ </div>
+ <div class="head" id="head29">
+    <div class="container" id="container29"></div>
+ </div>
+ <div class="head" id="head30">
+    <div class="container" id="container30"></div>
+ </div>
+ <div class="head" id="head31">
+    <div class="container" id="container31"></div>
+ </div>
+ <div class="head" id="head32">
+    <div class="container" id="container32"></div>
+ </div>
+ <div class="head" id="head33">
+    <div class="container" id="container33"></div>
+ </div>
+ <div class="head" id="head34">
+    <div class="container" id="container34"></div>
+ </div>
+ <div class="head" id="head35">
+    <div class="container" id="container35"></div>
+ </div>
+ <div class="head" id="head36">
+    <div class="container" id="container36"></div>
+ </div>
+ <div class="head" id="head37">
+    <div class="container" id="container37"></div>
+ </div>
+ <div class="head" id="head38">
+    <div class="container" id="container38"></div>
+ </div>
+ <div class="head" id="head39">
+    <div class="container" id="container39"></div>
+ </div>
+ <div class="head" id="head40">
+    <div class="container" id="container40"></div>
+ </div>
+ <div class="head" id="head41">
+    <div class="container" id="container41"></div>
+ </div>
+ <div class="head" id="head42">
+    <div class="container" id="container42"></div>
+ </div>
+ <div class="head" id="head43">
+    <div class="container" id="container43"></div>
+ </div>
+ <div class="head" id="head44">
+    <div class="container" id="container44"></div>
+ </div>
+ <div class="head" id="head45">
+    <div class="container" id="container45"></div>
+ </div>
+ <div class="head" id="head46">
+    <div class="container" id="container46"></div>
+ </div>
+ <div class="head" id="head47">
+    <div class="container" id="container47"></div>
+ </div>
+ <div class="head" id="head48">
+    <div class="container" id="container48"></div>
+ </div>
+ <div class="head" id="head49">
+    <div class="container" id="container49"></div>
+ </div>
+ <div class="head" id="head50">
+    <div class="container" id="container50"></div>
+ </div>
+ <div class="head" id="head51">
+    <div class="container" id="container51"></div>
+ </div>
+ <div class="head" id="head52">
+    <div class="container" id="container52"></div>
+ </div>
+ <div class="head" id="head53">
+    <div class="container" id="container53"></div>
+ </div>
+ <div class="head" id="head54">
+    <div class="container" id="container54"></div>
+ </div>
+ <div class="head" id="head55">
+    <div class="container" id="container55"></div>
+ </div>
+ <div class="head" id="head56">
+    <div class="container" id="container56"></div>
+ </div>
+ <div class="head" id="head57">
+    <div class="container" id="container57"></div>
+ </div>
+ <div class="head" id="head58">
+    <div class="container" id="container58"></div>
+ </div>
+ <div class="head" id="head59">
+    <div class="container" id="container59"></div>
+ </div>
+ <div class="head" id="head60">
+    <div class="container" id="container60"></div>
+ </div>
+ <div class="head" id="head61">
+    <div class="container" id="container61"></div>
+ </div>
+ <div class="head" id="head62">
+    <div class="container" id="container62"></div>
+ </div>
+ <div class="head" id="head63">
+    <div class="container" id="container63"></div>
+ </div>
+ <div class="head" id="head64">
+    <div class="container" id="container64"></div>
+ </div>
+ <div class="head" id="head65">
+    <div class="container" id="container65"></div>
+ </div>
+ <div class="head" id="head66">
+    <div class="container" id="container66"></div>
+ </div>
+ <div class="head" id="head67">
+    <div class="container" id="container67"></div>
+ </div>
+ <div class="head" id="head68">
+    <div class="container" id="container68"></div>
+ </div>
+ <div class="head" id="head69">
+    <div class="container" id="container69"></div>
+ </div>
+ <div class="head" id="head70">
+    <div class="container" id="container70"></div>
+ </div>
+ <div class="head" id="head71">
+    <div class="container" id="container71"></div>
+ </div>
+ <div class="head" id="head72">
+    <div class="container" id="container72"></div>
+ </div>
+ <div class="head" id="head73">
+    <div class="container" id="container73"></div>
+ </div>
+ <div class="head" id="head74">
+    <div class="container" id="container74"></div>
+ </div>
+ <div class="head" id="head75">
+    <div class="container" id="container75"></div>
+ </div>
+ <div class="head" id="head76">
+    <div class="container" id="container76"></div>
+ </div>
+ <div class="head" id="head77">
+    <div class="container" id="container77"></div>
+ </div>
+ <div class="head" id="head78">
+    <div class="container" id="container78"></div>
+ </div>
+ <div class="head" id="head79">
+    <div class="container" id="container79"></div>
+ </div>
+ <div class="head" id="head80">
+    <div class="container" id="container80"></div>
+ </div>
+ <div class="head" id="head81">
+    <div class="container" id="container81"></div>
+ </div>
+ <div class="head" id="head82">
+    <div class="container" id="container82"></div>
+ </div>
+ <div class="head" id="head83">
+    <div class="container" id="container83"></div>
+ </div>
+ <div class="head" id="head84">
+    <div class="container" id="container84"></div>
+ </div>
+ <div class="head" id="head85">
+    <div class="container" id="container85"></div>
+ </div>
+ <div class="head" id="head86">
+    <div class="container" id="container86"></div>
+ </div>
+ <div class="head" id="head87">
+    <div class="container" id="container87"></div>
+ </div>
+ <div class="head" id="head88">
+    <div class="container" id="container88"></div>
+ </div>
+ <div class="head" id="head89">
+    <div class="container" id="container89"></div>
+ </div>
+ <div class="head" id="head90">
+    <div class="container" id="container90"></div>
+ </div>
+ <div class="head" id="head91">
+    <div class="container" id="container91"></div>
+ </div>
+ <div class="head" id="head92">
+    <div class="container" id="container92"></div>
+ </div>
+ <div class="head" id="head93">
+    <div class="container" id="container93"></div>
+ </div>
+ <div class="head" id="head94">
+    <div class="container" id="container94"></div>
+ </div>
+ <div class="head" id="head95">
+    <div class="container" id="container95"></div>
+ </div>
+ <div class="head" id="head96">
+    <div class="container" id="container96"></div>
+ </div>
+ <div class="head" id="head97">
+    <div class="container" id="container97"></div>
+ </div>
+ <div class="head" id="head98">
+    <div class="container" id="container98"></div>
+ </div>
+ <div class="head" id="head99">
+    <div class="container" id="container99"></div>
+ </div>
+ <div class="head" id="head100">
+    <div class="container" id="container100"></div>
+ </div>
+
+</body>
+</html>

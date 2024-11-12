@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Element 1</div>
+    <div class="box">Element 2</div>
+    <button onclick="getCreate1()">Create1</button>
+
+    <button onclick="getCreate2()">Create2</button>
+    
+
+    <script>
+        let ele = document.getElementsByClassName("box");
+
+        function getCreate1(){
+            ele[0].style.height = "200px";
+            ele[0].style.width = "200px";
+            ele[0].style.backgroundColor = "blue";
+            ele[0].style.borderRadius = "100px";
+            ele[0].style.textAlian = "center";
+                }
+
+                function getCreate2(){
+            ele[1].style.height = "200px";
+            ele[1].style.width = "200px";
+            ele[1].style.backgroundColor = "red";
+            ele[1].style.borderRadius = "80px";
+            ele[1].style.textAlian = "center";
+            ele[1].style.margin = "100px";
+                }
+    </script>
+</body>
+</html>

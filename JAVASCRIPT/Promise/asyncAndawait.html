@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<body>
+  <script>
+  let prom1=new Promise((resolve,reject)=>{
+ setTimeout(( )=>{
+ let pro = 'I promise you ill never leave you'
+ resolve(pro)
+},3000)
+})
+let prom2=new Promise((resolve,reject)=>{
+ setTimeout(( )=>{
+ let pro='I will gift you iphone on your birthday'
+ resolvex (pro)
+},6000)
+})
+async function getPromise( ){
+  let pro1=await prom1;
+ console.log(pro1);
+ let pro2= await prom2;
+ console.log(pro2)
+}
+getPromise( ) 
+    
+  </script>
+  
+</body>
+
+</html>

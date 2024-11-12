@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+       // push(ele1, ele2, ele3, elen): it is use to add the elements from last index.
+       // note: we can push more than one element simultaneously.
+        let array1 = ["index1", "index2", "index3", "index3"];
+
+        console.log(array1);
+        array1[4] = "index4";// traditional way
+        console.log(array1);
+
+        array1.push("index5", "index6", "index7"); // modern way
+        console.log(array1);
+        array1.pop();
+        console.log(array1);
+
+        let array2 = ["index-01", "index-02", "index-03"];
+        array1.push(...array2);
+        console.log(array1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            background-color: #A5A391;
+
+            grid-template-areas: 
+                               "header header header"
+                               "menu main right"
+                               "menu footer footer";
+
+            gap: 10px;
+        }
+
+        .grid-items{
+            background-color: #BC4A3C;
+            text-align: center;
+            
+
+        }
+
+        #grid1{
+            grid-area: header;
+        }
+        #grid2{
+            grid-area: menu;
+        }
+        #grid3{
+            grid-area: main;
+        }
+        #grid4{
+            grid-area: right;
+        }
+        #grid5{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="grid-items" id="grid1">header</div>
+        <div class="grid-items" id="grid2">menu</div>
+        <div class="grid-items" id="grid3">main</div>
+        <div class="grid-items" id="grid4">right</div>
+        <div class="grid-items" id="grid5">footer</div>
+    </div>
+    
+</body>
+</html>

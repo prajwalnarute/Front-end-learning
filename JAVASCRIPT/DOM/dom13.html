@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ele = document.getElementsByTagName("h1")[0];
+        ele.setAttribute("id", "demoid");
+        console.log(document.body);
+
+        let ele2 = document.getElementsByTagName("h2")[0]
+        let att = document.createAttribute("id");
+        att.value = "head2";
+        ele2.setAttributeNode(att);
+        console.log(document.body);
+
+        ele2.className = "head2";
+        console.log(document.body);
+
+        ele2.style = "color:red";
+        ele2.innerHTML = "heading two";
+
+        ele2.name = "heading 2";
+
+        console.log(document.body);
+    </script>
+</body>
+</html>

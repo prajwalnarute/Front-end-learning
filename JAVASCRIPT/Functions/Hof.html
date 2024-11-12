@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Higer Order Function: A function which can accepts the function as 
+        // an argument or returns the function is known as HOF 
+        // Note: which is introduced ES06 (2015)
+        function parent(){
+            console.log("Parent Function");
+
+            return ()=>{
+                console.log("child function");
+            };
+        }
+
+        parent()// it called the parent function
+        (); // it call child function which is (present inside parent function) or which is returned by  parent function.
+        
+    </script>
+    
+</body>
+</html>

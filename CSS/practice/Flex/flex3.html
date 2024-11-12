@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 300px;
+            width: 250px;
+            border: 1px solid;
+            margin: 150px auto;
+            background-color: #222;
+            perspective: 400px;
+            background-size: cover;
+            background-image: url("https://images.news18.com/ibnlive/uploads/2017/12/Salman-Khan6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+
+        .container1{
+            height: 300px;
+            width: 250px;
+            border: 1px solid;
+            margin: 150px auto;
+            background-color: #222;
+            perspective: 400px;
+            background-size: cover;
+            background-image: url("https://images.news18.com/ibnlive/uploads/2017/12/Salman-Khan6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+        #child{
+            
+           height: 298px;
+           width: 248px;
+           border: 1px solid;
+           text-align: center;
+           background-color: white;
+           transform: rotateX(45deg);
+           animation: mirror 2s infinite linear;
+           background-image: url("https://cdn.britannica.com/75/124975-050-32A8692C/Aishwarya-Bachchan-Rai.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           transform-origin:  left;
+
+        }
+
+        #child1{
+            
+            height: 298px;
+            width: 248px;
+            border: 1px solid;
+            text-align: center;
+            background-color: white;
+            transform: rotateX(45deg);
+            animation: mirror 2s infinite linear;
+            background-image: url("https://cdn.britannica.com/75/124975-050-32A8692C/Aishwarya-Bachchan-Rai.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform-origin:  top;
+ 
+         }
+
+        @keyframes mirror{
+          from{
+            transform: rotateX(0deg);
+          }
+          to{
+            transform: rotateX(360deg);
+          }
+        }
+        
+        @keyframes mirror{
+          from{
+            transform: skewX(0deg);
+          }
+          to{
+            transform: skewX(360deg);
+          }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="child"></div>
+    </div>
+
+    <div class="container1">
+        <div id="child1"></div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+ a module in js a file containing related code or chunk of code in js we use
+ import and export keywords to share and receive code respectively across
+ different module which means instead of having all code in same file we can 
+ break the code into different files and we can use anywhere we want with the 
+ help of export and import keyword
+
+ Note:- we need to mention type = "module" inside a <script> tag
+ in src attribute there we need to mention imported module in js.
+
+ there are two types of modules 
+ 1. named module
+ 2. default module
+
+
+
+
+
+
+ // exporting all code at time
+ // Exporting code to sample.js file
+ function msg(){
+    console.log("good morning")
+ }
+ function msg2(){
+    console.log("good afternoon")
+ }
+
+ export{
+    msg, msg2
+ }
+
+ // importing all code with the help of  * notation from other file called sample2.js
+ import * as file from "./sample2.js";
+ file.msg();
+ file.msg2();

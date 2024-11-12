@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container{
+      background-color: aqua;
+      height:100vh;
+      width: 100vw;
+      background-image: url("./butterfly-436705_640.jpg");
+       background-size: cover; /*this is used for not displaying multiple images and cover all screen with one image */
+      background-position: center; 
+    
+      /*  above property move the background image in center position */
+    }
+
+    .form{
+      /* margin: auto; */
+      height: 450px;
+      width: 380px;
+      border: 1px solid;
+      /* the below property is very important because automatically behaviour of div is STATIC so we cant move this .form class without absolute postion */
+      /* with the use of postion we can easily control and move the div inside the div */
+      position:absolute; 
+
+      margin-top: 15%;
+      margin-left: 40%;
+      border-radius: 30px 30px 30px 30px ;
+      box-shadow: 0px 0px 80px;
+
+    }
+    .input{
+      height: 40px;
+      width: 300px;
+      margin-left: -50px;
+      background-color: transparent;
+      border: 1px dotted;
+      border-color: aliceblue;
+      
+
+    }
+
+    input::placeholder{
+      text-align: center;
+      font-size: 14px;
+      color: aliceblue;
+    }
+    input:hover{
+      background-color: #CAF4FF;
+      cursor: pointer;
+    }
+     
+
+    #inp1{
+      /* border-radius: 10px; */
+      border-radius: 30px 30px 30px 30px ;
+
+    }
+    #inp2{
+      /* border-radius: 10px; */
+      border-radius: 30px 30px 30px 30px ;
+
+      margin-top: 25px;
+    }
+
+    .head{
+      margin-left: 120px;
+      font-size: 30px;
+      color: #FBF9F1;
+    }
+
+    .usr{
+      margin-left: 90px;
+      
+    }
+    .login{
+      margin-left: 42px;
+      background-color: #FFC7ED;
+      margin-top: 20%;
+      height: 51px;
+      width: 80%;
+      border-radius: 30px 30px 30px 30px;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <div class="form">
+      <h3 class="head">LogIn Form</h3>
+      <div class="usr">
+        <div>
+          
+          <input class="input" type="text" placeholder="Username"  id="inp1">
+          
+        </div>
+        <div>
+          
+          <input class="input" type="text" placeholder="Password"  id="inp2">
+        </div>
+       
+      </div>
+
+         <div>
+         <button type="submit" class="login"> Login</button>
+         </div>
+
+
+    </div>
+  </section>
+  
+</body>
+</html>

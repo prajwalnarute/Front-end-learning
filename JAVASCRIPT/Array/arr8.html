@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // SHALLOW COPY
+        let num = [10, 20, 30, 40, 50];
+        console.log(num);
+        let copyArray = num;
+        console.log(copyArray);
+        copyArray[5] = "index=5";
+        console.log(num);
+        console.log(copyArray);
+        console.log(num === copyArray);
+        num[6] = "index-6";
+        console.log(num);
+        console.log(copyArray);
+
+
+
+
+        // DEEP COPY
+        let color = ["red", "orange", "yellow", "green"]
+        console.log(color);
+        let copycolor = [...color, "violet", "pink", "aqua", "saphron"]
+
+        console.log(copycolor)
+        console.log(color === copycolor)
+
+        console.log(color);
+        console.log(copycolor);
+
+        copycolor[5] = "brown";// replace pink by brown
+
+        console.log(color);
+        console.log(copycolor);
+    </script>
+</body>
+</html>

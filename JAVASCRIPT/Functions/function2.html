@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Parameterized function
+        function add(a, b){
+            console.log(a+b);
+        }
+
+        add(10,30);
+
+       
+
+        // Function Hoisting : Js allows developer to access the function before 
+        // It's declaration is known as function hoisting.
+        // Note: we can perform function hoisting in function declaration only.
+        // Function call statement: A statement which is responsible to call function.
+        hoisting(); // function call statement before declaration.
+
+        function hoisting(a, b){
+            console.log(a*b); // gives NaN result because undefined*undefined = NaN
+        }
+
+
+        function mul(a, b){
+            return a*b;
+        }
+
+        console.log(mul(10, 20));
+    </script>
+    
+</body>
+</html>

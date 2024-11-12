@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 300px;
+            width: 50%;
+            border: 1px solid;
+            margin: 80px auto;
+        }
+       /*  it will take its direction from its parent i.e div */
+        #head1{
+            direction:ltr;
+        }
+
+        #head2{
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <h1 id="head1">TEXT LEFT TO RIGHT</h1>
+        <H1 id="head2">TEXT RIGHT TO LEFT</H1>
+    </div>
+    
+</body>
+</html>

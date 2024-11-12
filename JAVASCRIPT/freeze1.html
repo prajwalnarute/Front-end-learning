@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let duster = {
+            company:"camline",
+            price:50,
+            color:"black",
+            weight:"50gm"
+        }
+
+        console.log(duster);
+        delete duster.weight;
+        console.log(duster);
+        
+        // 
+        Object.freeze(duster);
+        delete duster.price; // we cannot delete existing attribute and its values after frozen.
+        console.log(duster);
+
+        duster.company = "nataraj"; // we cannot modify existing attribute and its values after frozen.
+        console.log(duster); 
+
+        duster.work = "disappearing content"; // we also cannot add new attribute and its values after the frozen the object.
+        console.log(duster);
+        
+        // isFrozen(): It is use to check the object is frozen or not.
+        // Note: return type is boolean.
+        console.log(Object.isFrozen(duster)); 
+
+        // entries(): It is use to convert object into an array.
+        console.log(Object.entries(duster));
+    </script>
+</body>
+</html>

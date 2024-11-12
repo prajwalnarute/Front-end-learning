@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let car = {
+            company: "tata",
+            model : "safari",
+            price : 18000000
+        }
+
+        console.log(car);
+        let engine = {
+            axle:"4*4",
+            drive:"frontwheel"
+        }
+
+        console.log(engine)
+
+        console.log(Object.assign(car, engine));
+
+        engine.strokes = "2 strokes";
+        
+        let specification = {
+            steering:"power",
+            sunroof:"yes",
+            window:"power"
+        }
+
+        console.log(Object.assign(car, engine, specification));
+        console.log(car);
+        console.log(engine);
+        console.log(specification);
+    </script>
+</body>
+</html>

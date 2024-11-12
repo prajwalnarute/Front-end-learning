@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="bulb" style="height: 200px; width: 200px; border: 1px solid; border-radius: 60%;"></div>
+    <button onclick="getOn()">ON</button>
+    <button onclick="getOff()">OFF</button>
+    <script>
+
+        // FUNCTION DECLARATION SYNTAX
+        // function declaration(){
+        //     console.log("Hey this is a function");
+        // }
+
+        // declaration();
+
+        let bulb1 = document.getElementById("bulb");
+
+        function getOn(){
+            bulb1.style.backgroundColor=prompt("enter your color");
+        }
+        function getOff(){
+            bulb1.style.backgroundColor = "black";
+        }
+    </script>
+    
+</body>
+</html>

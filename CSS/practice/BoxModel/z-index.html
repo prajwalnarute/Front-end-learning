@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 500px;
+            width: 50%;
+            border: 1px solid transparent;
+        }
+
+        #container1{
+            background-color: red;
+            position: absolute;
+            z-index: -1;
+            /* this box gets hidden bellow 2nd box because z-index is -1 */
+        }
+
+        #container2{
+
+            background-color: aqua;
+            z-index: 1;
+            /* this box is visible because its z-index is 1 */
+        }
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="container" id="container1"></div>
+    <div class="container" id="container2"></div>
+
+
+    
+</body>
+</html>

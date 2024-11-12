@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let employee = ["ajay" , "jay", {ename:"john", age:27, email:"john@123"}]
+        console.log(employee);
+
+
+
+
+        let copyEmployee = employee;
+        console.log(copyEmployee);
+        copyEmployee[2].ename = "rajesh";
+        console.log(copyEmployee);
+
+        console.log(copyEmployee === employee);
+
+        console.log(copyEmployee[2] === employee);
+
+        let player = ["sachin", "rohit", "virat", "msd"];
+        console.log(..."hello"); // string to array
+        let str1 = [..."goodbye"];// converting string to array and assigning index to the character of a string
+        console.log(str1);
+        
+        str1[5] = "e"; // can be modify but in this only array can modify not a original string 
+        console.log(str1);
+
+        let name = "prajwal";
+        console.log(name);
+
+        name[2] = "i";
+        console.log(name); // immutable in nature i.e does not modify
+
+    </script>
+</body>
+</html>

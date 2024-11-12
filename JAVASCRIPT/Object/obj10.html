@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function emp(ename, esal, eid, edept){
+            this.ename = ename;
+            this.esal  = esal;
+            this.eid = eid;
+            this.edept = edept;
+        }
+
+        let emp1 = new emp("Ganya", 2000, "ganya@123", "sales");
+        let emp2 = new emp("sonya", 2500, "sonya@123", "marketing");
+        console.log(emp1);
+        console.log(emp2);
+    </script>
+    
+</body>
+</html>

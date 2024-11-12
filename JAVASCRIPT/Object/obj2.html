@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let team ={
+
+         mi:{jersyColor:"Blue", captain:"Rohit Sharma", viceCaptain:"Hardik Pandya", titleCount:5},
+         rcb : {jersyColor:"red", captain:"faf Du Plesis", viceCaptain:"Virat Kohli", titleCount:0, owner:"Vijay Mallya"},
+         csk : {jersyColor:"Yello", captain:"MS Dhoni", viceCaptain:"Ruturaj Gaikwad", titleCount:5},
+         kkr : {jersyColor:"Violet", captain:"Shreyash Ayyer", viceCaptain:"Sunil Narine", titleCount:3}
+
+
+        }
+        console.log(team. rcb.captain);
+         console.log(team.mi.jersyColor);
+         console.log(team.kkr.titleCount);
+          
+
+
+         team.rr = {jersyColor:"blue", captain:"Sanju samson"}; // adding extra  team name as key value pair
+         console.log(team);
+         team.rr.titleCount = 1; // adding extra key value pair
+         console.log(team);
+
+         team.csk.viceCaptain = "Ravindra Jadeja"; // modifing existing key value pair
+         console.log(team); 
+    </script>
+    
+</body>
+</html>

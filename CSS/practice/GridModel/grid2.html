@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box ;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+
+            display: grid;
+            background-color: aqua;
+            grid-template-areas: 'header header header header header header header header'
+                'left left menu menu menu right right right'
+                'footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2';
+            gap: 10px 15px;
+            padding: 21px;
+        }
+
+        .griditems {
+            text-align: center;
+            background-color: coral;
+            font-size: 15px;
+        }
+
+        #grid1 {
+            grid-area: header;
+            background-color: oldlace;
+        }
+
+        #grid2 {
+            grid-area: left;
+            background-color: springgreen;
+        }
+
+        #grid3 {
+            grid-area: menu;
+            background-color: yellow;
+        }
+
+        #grid4 {
+            grid-area: right;
+            background-color: chartreuse;
+        }
+
+        #grid5 {
+            grid-area: footer1;
+            background-color: black;
+        }
+
+        #grid6 {
+            grid-area: footer2;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="griditems" id="grid1"> Header
+    
+        </div>
+        <div class="griditems" id="grid2"> Main
+            
+        </div>
+        <div class="griditems" id="grid3"> menu
+           
+        </div>
+        <div class="griditems" id="grid4"> right
+            
+        </div>
+        <div class="griditems" id="grid5">footer1
+            
+        </div>
+        <div class="griditems" id="grid6">footer2
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

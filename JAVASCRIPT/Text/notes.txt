@@ -1,0 +1,28 @@
+A. Pascal Case Convention:-
+1. Single Word
+     Amar
+2. Multi Words
+   AmarAkbarAnthony
+
+B. camel case Convention
+1. single Word
+     amar 
+2. multi Word
+    amarAkbarAnthony
+
+C. kebab case Convention
+1. single Word 
+    kebab1
+2. multi Word
+    kebab1-kebab2-kebab3
+
+D.lower case Convention
+1. single word 
+    snake
+2. multi word Convention
+   Snake1_snake2_snake3
+
+E. upper case Convention
+1. single word
+    SNAKE 
+2. SNAKE1_SNAKE2_SNAKE3

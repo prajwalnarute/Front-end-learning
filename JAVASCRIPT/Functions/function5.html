@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // most important 
+        var fun = function demo(a, b){
+            console.log("function exp");
+            return a + b; // after this return statement executes control goes to calling statement
+                          // it will not check below return statement  and output gives as 30
+            return a * b;
+        }
+
+        console.log(fun(10, 20));
+    </script>
+    
+</body>
+</html>

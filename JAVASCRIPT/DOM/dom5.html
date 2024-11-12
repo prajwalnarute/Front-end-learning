@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1" class="head"></h1>
+    <h1 id="head1" class="head">1</h1>
+    <h1 id="head1" class="head">2</h1>
+    <h1 id="head1" class="head">3</h1>
+
+    <script>
+        let ele = document.getElementById("head1");
+        let ele2 = document.getElementsByClassName("head")
+        ele.innerHTML = "Heading"; // it only assign to first element
+
+        console.log(ele);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function person1(name, callback){
+
+            console.log(`${name} is talking to Sanorita`);
+
+            setTimeout(callback, 4000);
+            console.log("call ended");
+        }
+
+        function person2(){
+            console.log("person2 has called.");
+        }
+
+        person1("Akshay", person2);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let declaration ;
+        // console.log(declaration);
+
+        // declaration = 10;
+        // console.log(declaration);
+
+        // declaration = true;
+        // console.log(declaration);
+
+        // let re_declaration = "re_declaration"  ; // re-declaration is not possible in let variable
+        // console.log(re_declaration);
+        // let re_declaration = 10;
+
+        // console.log("start");
+        // block scope: if we declared any member(variable) inside the block then will not get
+        // access of that member outside of the block is known as block scope variable.
+        // ex- let is block scope variable
+        let block = "block scope"; // let variable is block scope variable
+        console.log(block);
+
+        // if(true){
+        //     let a = 10;
+        // }
+        // console.log(a); // let is a block scope variable it is not accessible outside the block
+
+        // hoisting: js allows developer to access the member(variable,function) before its declaration
+        // Note: it is not possible in let variable.
+        console.log(hoisting);
+        let hoisting;
+
+    </script>
+    
+</body>
+</html>

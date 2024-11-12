@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para1">Lorem ipsum dolor sit amet.</p>
+    <p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, neque.</p>
+    <script>
+       
+        // for creating new element in HTML document
+        // only creating html element is not valid 
+        // it must append to the html document in body
+       let div1 =  document.createElement("div");
+         div1.innerHTML = "container 1";
+        
+         // this is for adding an div element to the body
+         document.body.appendChild(div1);
+         console.log(div1);
+
+
+         // in below it returns a collection is not valid
+        //  document.getElementsByTagName("div").onclick = () =>{
+        //     console.log("div 1 is clicked");}
+
+            // so valid is add direct event listener to div1
+            div1.onclick = () =>{
+                console.log("div1 is clicked");
+            }
+            div1.style.border = "2px  solid";
+            div1.style.display = "inline-block";
+            div1.style.height = "50px";
+            div1.style.width = "50px";
+
+            let paragraph = document.getElementsByClassName("para1");
+
+            paragraph[0].innerHTML = 'How are You?'; // for adding or changing the html content dynamically
+
+            // the below property is a very important property 
+            // style.cssText can add multiple attributes in single line
+            paragraph[1].style.cssText = 'border : 2px solid; background-color: skyBlue; height:150px; width:150px';
+            
+
+           
+            
+        
+    </script>
+</body>
+</html>

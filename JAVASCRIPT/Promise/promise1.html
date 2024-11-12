@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let orderFood = new Promise((resolve, reject) => {
+  let isRestaurantOpen = true;
+   
+  if (isRestaurantOpen) {
+    resolve("Food delivered!");
+  } else {
+    reject("Restaurant is closed.");
+  }
+});
+
+// Consuming the promise
+orderFood
+  .then((message) => {
+    console.log(message); // "Food delivered!" if promise is fulfilled
+  })
+  .catch((error) => {
+    console.log(error); // "Restaurant is closed." if promise is rejected
+  });
+
+  
+
+    </script>
+</body>
+</html>

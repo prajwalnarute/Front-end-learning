@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box{
+            height:300px;
+            width: 400px;
+            border: 1px solid;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="myCar" onchange="getCar()">
+        <option value="" disabled selected>Select Your Car</option>
+        <option value="Land-Rover">Land-Rover</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Audi">Audi</option>
+        <option value="Bmw">BMW</option>
+    </select>
+
+    <div id="box"></div>
+    <p id="greet"></p>
+    <p id="dateStamp"></p>
+
+    <script>
+        let box1 = document.getElementById("box");
+        let greet1 = document.getElementById("greet");
+        let dateStamp1 = document.getElementById("dateStamp");
+        let myCar1 = document.getElementById("myCar");  
+
+        function getCar(){
+            if(myCar1.value == "Land-Rover"){
+                greet1.innerHTML = `Congratulations!!!! Your selected car is ${mycar1.value}`;
+                greet1.style.color = "red";
+                dateStamp1.innerHTML = `Booking Date: ${new Date()}`;
+                dateStamp1.style.color = "blue";
+                box1.style.backgroundImage = `url("https://imgd.aeplcdn.com/370x208/n/cw/ec/107719/range-rover-exterior-right-front-three-quarter-46.jpeg?isig=0&q=80")`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+    
+          nav ul li {
+            display: inline-block;
+            /* margin-left: 50%; */
+            margin-left: 20px;
+            
+            
+        }
+
+        a{
+            text-decoration: none;
+                
+        }
+
+      nav ul {
+        /* background-color: beige; */
+        /* display: inline-block; */
+      }
+        #img1{
+            height: 30px;
+            width: 30px;
+            margin-left: 35px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+        #img2{
+            margin-left: 85%;
+            /* the below position is very important for overlaping the image into another right side side container */
+            position: relative;
+
+
+        }
+
+        
+        #nav1   {
+            margin-left: 50%;
+        }
+
+
+
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: auto auto;
+            background-color: aliceblue;
+            margin-top: 5%;
+
+        }
+
+        #part1{
+            background-color: aliceblue;
+            margin-left: 80px;
+           
+           
+        }
+        #part2{
+            background-color: indianred;
+            height: 50%;
+            margin-top: 100px;
+            border-radius: 15px;
+        }
+
+        #desc1{
+            margin-top: 120px;
+            margin-left: 90px;
+           align-items: center;
+          
+           
+           
+            
+        }
+
+        #text{
+            border: 1px solid;
+            border-width: 10px  ; 
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-color: tomato;
+            
+            padding: 10px;
+        }
+
+        
+       
+
+        
+
+       
+        
+    </style>
+</head>
+<body>
+
+       <main>
+            <nav>
+                <ul>
+                    <li  ><img id="img1"  src="./logo.png" alt=""></li>
+                    <li class="nav" id="nav1">  <a href="#"> Game Controller</a> </li>
+                    <li class="nav" id="nav2">  <a href="#"> VR Accessories</a></li>
+                    <li class="nav" id="nav3"><a href="#"> Media Remotes</a></li>
+                    <li class="nav" id="nav4"><a href="#"> Others</a></li>
+                </ul>
+            </nav>
+        </main>
+
+        <div class="container">
+            
+            <div class="part" id="part1"> <div id="text"> <p id="desc1"> <h1>PSV4 V2 <br> Dualshock 4 </h1><br> Wireless Controller For <br> Playstation 4 </p>
+            <div id="img2"><img  height="120px" width="200px" src="./controller.png"  alt=""></div></div> 
+            </div>
+            <div class="part" id="part2"></div>
+        </div>
+  
+    
+</body>
+</html>

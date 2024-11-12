@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // unshift(): It is use to add the elements from start index.
+        // Note: We can add more than one element simultaneously.
+        // unshift(ele1. ele2, elen);
+    let mobile = ["iphone", "samsung", "oneplus", "oppo", "nokia"];
+    console.log(mobile);
+    console.log(mobile.unshift("vivo", "moto"));// vivo and moto is added initial or start of an array
+    console.log(mobile);
+
+
+
+
+    let color = ["red", "blue", "green", "black"];
+    let arr1 = ["violet", "pink"];
+    let arr2 = ["hotpink", "skyblue", "aqua"];
+
+    console.log(color.unshift(...arr1, ...arr2));// it return the updated size of an array
+    console.log(color);
+    </script>
+</body>
+</html>

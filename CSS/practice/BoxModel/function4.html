@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Note : Hoisting is not possible in 'function as an expression'.
+       // console.log(exp1()); // Uncaught TypeError: exp1 is not a function
+        var exp1 = function exp(){
+            console.log("Function as an expression");
+        }
+
+        exp();
+        exp1()
+        console.log(exp1);
+        console.log(exp1()); // this question is asked in interview 
+    </script>
+    
+</body>
+</html>

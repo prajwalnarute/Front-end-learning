@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let name = window.prompt("enter your name");
+        let age = window.prompt("enter your age");
+        let citizenship = window.prompt("enter your citizenship");
+
+       // age>=18 ? citizenship == "indian" ? alert("eligible for voting"): alert("Not Eligible for voting"):alert("Not Elible for voting");
+
+       if(age>=18 && window.confirm("are you indian citizen?")){
+        window.alert(`Hello ${name}. welcome to voting`);
+       }
+       else{
+        alert(`${name} abhi tum bacche ho`);
+       }
+    </script>
+    
+</body>
+</html>

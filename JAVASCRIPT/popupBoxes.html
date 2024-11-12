@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // All Popup boxes are window methods 
+        // it can be either written with prefix window or without window
+
+        //alert("text")
+        // window.alert("Warning");
+
+
+        //         A confirm box is often used if you want the user to verify or accept something.
+
+        // When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+
+        // If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+        // confirm("text")
+
+        // if (confirm("Press a button!")) {
+        //  console.log( "You pressed OK!");
+        //  } else {
+        //  console.log( "You pressed Cancel!");
+        //   }
+
+        //           A prompt box is often used if you want the user to input a value before entering a page.
+
+        // When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+
+        // If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+
+        let person = prompt("Please enter your name", "Harry Potter");
+        let text;
+        if (person == null || person == "") {
+            alert("User cancelled the prompt.");
+        } else {
+            alert("Hello " + person + "! How are you today?")   ;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

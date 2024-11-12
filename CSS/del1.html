@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // delete: IT is use to remove key and value from object.
+
+    let mobile = {
+        company:"apple",
+        price: 1000000,
+        make:`california`
+    }
+    console.log(mobile);
+
+    delete mobile.price;
+    console.log(mobile);
+
+    mobile.price = 100000;
+    console.log(mobile);
+
+    // keys(): to get keys of object
+
+    console.log(Object.keys(mobile));
+    console.log(Object.values(mobile));
+
+    // values() : to get values of object
+    </script>
+</body>
+</html>

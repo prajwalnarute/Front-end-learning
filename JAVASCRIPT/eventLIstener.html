@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="text" placeholder="username" id="user">
+        <input type="text" placeholder="password" id="pass">
+        <input type="submit">
+    </form>
+
+    <script>
+        let form  = document.querySelector("#form");
+        form.addEventListener('submit', 
+            (event) =>{
+                event.preventDefault()
+                let userName = document.getElementById("user").value
+                let passWord = document.getElementById("pass").value
+                let user = {
+                    username: userName,
+                    password : passWord
+                }
+                console.log(user);
+            }
+        )
+
+    </script>
+</body>
+</html>

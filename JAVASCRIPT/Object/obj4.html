@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let mobile = {
+
+            company: "samsung",
+            model: "S23 ultra",
+            make : "german",
+            price: 70000,
+
+            functionality : () =>{
+                console.log("calling");
+                console.log("camera");
+                console.log("video features");
+
+                // the Higher Order Function inside function.
+                return (name ) =>{
+                
+                    console.log(name);
+                }
+            }
+        }
+
+        mobile.functionality()("Higher order function");
+    </script>
+    
+</body>
+</html>

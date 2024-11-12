@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Example</title>
+<style>
+    /* Descendant selector: targets all <p> elements within .container */
+.container p {
+    color: green;
+}
+
+/* Child selector: targets only direct children <p> of .container */
+.container > p {
+    color: blue;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <p>Direct child paragraph.</p>
+        <div class="nested">
+            <p>Nested paragraph.</p>
+            <div class="more-nested">
+                <p>More nested paragraph.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

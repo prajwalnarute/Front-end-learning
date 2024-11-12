@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let human = {
+            name:"ganya",
+            age:23,
+            email:"ganya123@gmail.com"
+        }
+        console.log(human);
+        delete human.age; // we can delete existing attribute before sealing
+         
+        // seal(): It is use to seal(lock) an object.
+        // It is prevent to remove an existing key and value
+        // pair from object.
+        Object.seal(human);
+
+        delete human.name; // we cannot delete after seal the human object
+        console.log(human);
+
+        human.name = "sonya";
+        console.log(human); // we can only modify existing attribute and its values.
+
+        human.address = "Pune";
+        console.log(human);// we cannot add new attributes in the object
+        
+        // isSealed() : It is use to check the whether the object is sealed or not.
+        // Note: return type is boolean.
+        console.log(Object.isSealed(human));
+
+
+    </script>
+</body>
+</html>

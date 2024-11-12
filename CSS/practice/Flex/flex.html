@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            margin: auto;
+            border: 2px solid;
+            background-color: beige;
+            height: 500px;
+            width: 500px;
+
+
+            /* defatult behaviour of flex direction is row .ie main axis  */
+            /* if you want to make as column the use 
+             flex-direction: column; */
+
+            display: flex;
+            /* justify-content: center; // when the flex direction is row that time
+            justify content act on main axis
+            and when the flex direction is column that time
+            justify content act on cross axis
+            align-items: center;  */
+            /* when the flex direction is row that time align-items acts on cross axis 
+                when the flex direction is column that time
+            align-items act on main axis*/
+            /* the above two properties align the all boxes at the center */
+           
+
+
+
+            /* by default align-item works on cross axis because the by default flex-direction is row */
+            /* align-items: start;
+            align-items: center; */
+            align-items: end;
+            align-items: stretch  ;
+
+
+
+
+
+        }
+
+        .child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+
+
+        }
+
+        #item1 {
+            background-color: red;
+
+        }
+
+        #item2 {
+            background-color: aqua;
+        }
+
+        #item3 {
+            background-color: brown;
+        }
+
+        #item4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="child" id="item1">box1</div>
+        <div class="child" id="item2">box2</div>
+        <div class="child" id="item3">box3</div>
+        <div class="child" id="item4">box4</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head" id="head1"></h1>
+    <h1 class="head" id="head1"></h1>
+    <h1 class="head" id="head1"></h1>
+    <h1 class="head" id="head1"></h1>
+    <h1 class="head" id="head1"></h1>
+    <script>
+        let ele1 = document.querySelectorAll('h1');
+        ele1.innerHTML = "heading 1";
+        ele1[1].innerHTML = "heading 2"
+
+
+        let ele2 = document.querySelectorAll(".head");
+        ele2[0].style.color = "blue";
+
+        let ele3 = document.querySelectorAll('#head1');
+        ele3[0].style.fontSize = "300px";
+        ele3[1].style.fontSize = "300px";
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mobile = ["iphone", "samsung", "oneplus"];
+        console.log(mobile);
+
+        let laptop = ["hp", "dell", "asus"];
+
+        console.log(laptop);
+
+        let copyDevice = [...laptop, 10, 20, 30, ...mobile]; // at the point of this assignment only that objects are added
+        console.log(copyDevice);
+
+        laptop[4] = "macbook";
+        console.log(laptop);
+        console.log(copyDevice);
+
+    </script>
+</body>
+</html>

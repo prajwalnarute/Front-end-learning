@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container1{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            margin: 40px auto;
+            display: flex;
+
+            /* by defautl flex wrap is no wrap */
+            /* flex-wrap: nowrap;  */
+
+            flex-wrap: wrap;
+
+            /* flex-direction: row;  this is auto direction  */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+
+            /* justify-content: start; */
+            /* justify-content: center;
+            justify-content: end; */
+
+            /* justify-content: flex-start; */
+           /* flex-direction: row-reverse;
+
+           flex-wrap: wrap-reverse;   */
+           /* flex-direction: column-reverse; */
+           flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;  
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="child" id="child1">box1</div>
+        <div class="child" id="child2">box 2</div>
+        <div class="child" id="child3">box 3</div>
+        <div class="child" id="child4">box 4</div>
+        <!-- <div class="child" id="child5">box 5</div>
+        <div class="child" id="child6">box 6</div>
+        <div class="child" id="child6">box 7</div>
+        <div class="child" id="child6">box 8</div> -->
+    </div>
+
+
+    
+</body>
+</html>

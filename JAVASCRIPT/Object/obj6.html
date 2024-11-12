@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let human1 = {
+            name : "ganya",
+            age : 18,
+            voting : () =>{
+                console.log("welcome to voting");
+            }
+        }
+
+        let human2 = {
+            name : "sonya",
+            age :21
+        }
+
+
+        //prompt("enter your age") >= 18 ? human1.voting() :alert("go back to home and watch pogo");
+        human1.age>=prompt("enter your age") ? human1.voting() :alert("go back to home and watch pogo");
+        
+
+    </script>
+    
+</body>
+</html>

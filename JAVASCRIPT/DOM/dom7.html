@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="inp" id="" onclick="getRed()">
+    <input type="radio" name="inp" id="" onclick="getGreen()">
+    <input type="radio" name="inp" id="" onclick="getBlack()">
+    <input type="radio" name="inp" id="" onclick="getSkyBlue()">
+    <input type="radio" name="inp" id="" onclick="getOrange()">
+
+
+    <script>
+        let inp1 = document.getElementsByName("inp");
+
+        console.log(inp1[0]);
+
+        function getRed(){
+            inp1[0].style.accentColor = "red";
+
+        }
+        function getGreen(){
+            inp1[1].style.accentColor = "green";
+            
+        }
+        function getBlack(){
+            inp1[2].style.accentColor = "black";
+            
+        }
+        function getSkyBlue(){
+            inp1[3].style.accentColor = "SkyBlue";
+            
+        }
+        function getOrange( ){
+            inp1[4].style.accentColor = "orange";
+            
+        }
+        
+    </script>
+</body>
+</html>

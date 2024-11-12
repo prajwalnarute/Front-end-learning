@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .circle{
+            border: 20px solid white;
+            
+            border-radius: 50%;
+            
+            display: inline-block;
+            height: 250px;
+            width: 250px;
+            margin-left: 50%;
+            margin-top: 300px;
+            animation: spin 2s infinite linear;
+        }
+        #circle1{
+            border-top: 16px solid black;
+        }
+
+        @keyframes circle {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+ <div class="circle" id="circle1">
+
+ </div>
+
+    
+</body>
+</html>

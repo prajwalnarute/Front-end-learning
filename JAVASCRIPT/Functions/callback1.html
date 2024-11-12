@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function run1(){
+            console.log("function 1");
+
+        }
+        function run2(){
+            console.log("function 2");
+            setTimeout(run1, 2000);
+        }
+        function run3(){
+            console.log("function 3");
+            setTimeout(run2, 2000);
+        }
+        function run4(){
+            console.log("function 4");
+            setTimeout(run3, 2000);
+        }
+        function run5(){
+            console.log("function 5");
+            setTimeout(run4, 2000);
+        }
+        function run6(){
+            console.log("function 6");
+            setTimeout(run5, 2000);
+        }
+        function run7(){
+            console.log("function 7");
+            setTimeout(run6, 2000);
+        }
+
+        run7();
+    </script>
+    
+</body>
+</html>
